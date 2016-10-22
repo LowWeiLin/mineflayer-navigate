@@ -92,7 +92,7 @@ function inject(bot) {
     function monitorMovement() {
       var nextPoint = currentCourse[0];
       var currentPosition = bot.entity.position;
-      if (currentPosition.distanceTo(nextPoint) <= 0.2) {
+      if (currentPosition.distanceTo(nextPoint) <= 0.1) {
         // arrived at next point
         lastNodeTime = new Date().getTime();
         currentCourse.shift();
