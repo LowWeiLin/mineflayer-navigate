@@ -4,7 +4,7 @@ var aStar = require('a-star')
 module.exports = init;
 
 // instantiated from init
-var vec3;
+var vec3=require('vec3');
 
 var MONITOR_INTERVAL = 40;
 var WATER_THRESHOLD = 20;
@@ -16,7 +16,6 @@ var DEFAULT_END_RADIUS = 0.1;
 var TOO_FAR_THRESHOLD = 150;
 
 function init(mineflayer) {
-  vec3 = mineflayer.vec3;
   return inject;
 }
 
